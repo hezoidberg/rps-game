@@ -1,0 +1,12 @@
+Metrics/LineLength:
+  Max: 100
+AllCops:
+  Exclude:
+    - 'test/test_helper.rb'
+    - 'bin/*'
+    - 'config/**/*.rb'
+Documentation:
+  Exclude:
+    - 'app/mailers/*'
+    - 'app/helpers/application_helper.rb'
+    - 'test/**/*'
