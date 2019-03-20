@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.2'
 
+gem 'faraday', '~> 0.15.4'
 gem 'mini_racer', platforms: :ruby
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
@@ -30,6 +31,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
+  gem 'webmock', '~> 3.5', '>= 3.5.1'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
