@@ -6,8 +6,6 @@
 * Paper beats rock
 * Identical throws tie (rock == rock, etc.)
 
-Things you may want to cover:
-
 ## Prerequisites
 * ruby 2.6.2
 * rails
