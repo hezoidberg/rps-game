@@ -12,7 +12,7 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
           'User-Agent' => 'Faraday v0.15.4'
         }
       )
-      .to_return(status: 200, body: %({"statusCode": 200, "body": "rock"}), headers: {})
+      .to_return(status: 200, body: { "statusCode": 200, "body": '"rock"' }.to_json, headers: {})
   end
 
   test 'should get init' do

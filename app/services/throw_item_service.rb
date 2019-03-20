@@ -12,8 +12,7 @@ class ThrowItemService
     throw_item = if item_by_curb.nil? || item_by_curb['statusCode'] != 200
                    ThrowItemFactory::KNOWN_ITEMS.keys.sample
                  else
-                   p item_by_curb['body']
-                   item_by_curb['body']
+                   JSON.parse(item_by_curb['body'])
                  end
     ThrowItemFactory.get_by_type(throw_item)
   end
