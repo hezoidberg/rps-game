@@ -1,0 +1,6 @@
+development:
+  game_url: <%= ENV['GAME_URL'] || 'https://5eddt4q9dk.execute-api.us-east-1.amazonaws.com/rps-stage/throw' %>
+test:
+  game_url: <%= ENV['GAME_URL'] || 'https://5eddt4q9dk.execute-api.us-east-1.amazonaws.com/rps-stage/throw' %>
+production:
+  game_url: <%= ENV['GAME_URL'] %>

@@ -4,7 +4,7 @@ require 'test_helper'
 
 class GamesControllerTest < ActionDispatch::IntegrationTest
   def setup
-    stub_request(:get, 'https://5eddt4q9dk.execute-api.us-east-1.amazonaws.com/rps-stage/throw')
+    stub_request(:get, Rails.configuration.curb['game_url'])
       .with(
         headers: {
           'Accept' => '*/*',
