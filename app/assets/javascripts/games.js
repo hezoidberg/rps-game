@@ -33,7 +33,6 @@ $(document).ready(function() {
           },
           success: function(msg) {
             $('#comp-pick').text(msg['comp_pick']['type']);
-            debugger;
             $('#result').text(winner(msg['winner']))
           },
           complete: function() {
