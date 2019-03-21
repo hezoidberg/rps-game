@@ -9,11 +9,24 @@ class ThrowItemService
   def throw
     item_by_curb = CurbResponseService.throw_item
 
-    throw_item = if item_by_curb.nil? || item_by_curb['statusCode'] != 200
-                   ThrowItemFactory::KNOWN_ITEMS.keys.sample
-                 else
+    throw_item = if valid?(item_by_curb)
                    JSON.parse(item_by_curb['body'])
+                 else
+                   available_types.sample
                  end
     ThrowItemFactory.get_by_type(throw_item)
+  end
+
+  private
+
+  def available_types
+    ThrowItemFactory::KNOWN_ITEMS.keys
+  end
+
+  def valid?(comp_pick)
+    return false if comp_pick.blank? || comp_pick['statusCode'] != 200
+
+    value = JSON.parse(comp_pick['body'])
+    available_types.include?(value)
   end
 end
