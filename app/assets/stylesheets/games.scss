@@ -8,19 +8,15 @@
   margin-top: 128px;
   margin-bottom: 43px;
 }
-
 .title-color {
   color: #36006C;
 }
-
 .font-24 {
   font-size: 24pt;
 }
-
 .font-21 {
   font-size: 21pt;
 }
-
 .description-text {
   font-size: 16pt;
   font-weight: 200;
@@ -28,20 +24,30 @@
   opacity: 0.54;
   margin-bottom: 35px;
 }
-
 .throw-img {
   width: 63px;
   height: 138px;
   margin-top: 46px;
   margin-bottom: 26px;
 }
-
+.spinner {
+  width: 150px;
+  height: 138px;
+  margin-top: 46px;
+  margin-bottom: 26px;
+  padding-top: 50px;
+}
+.comp-img {
+  width: 150px;
+  height: 138px;
+  margin-top: 46px;
+  margin-bottom: 26px;
+}
 .btn-area {
   width: 240px;
   height: 306px;
   margin-top: 41px;
 }
-
 .btn-area:hover {
-  background-color: #F8F8F8;
+  background-color: gray("200")
 }
