@@ -1,2 +1,73 @@
-<h1>Games#init</h1>
-<p>Find me in app/views/games/init.html.erb</p>
+<div> <div class="d-flex flex-row justify-content-center header-text"> <span class="title-color">ROCK – PAPER – SCISSORS</span> </div> <div class="d-flex flex-row justify-content-center"> <p class="w-50 description-text">Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.</p> </div> <div class="d-flex flex-row justify-content-center"> <span class="font-21">SELECT YOUR BET<span> </div> <div class="d-flex flex-row justify-content-center">
+    <div id="rock" class="text-center" data-toggle="modal" data-target="#exampleModalCenter">
+      <figure class="btn-area">
+        <img src="/assets/Rock.svg" class="figure-img throw-img">
+        <figcaption class="figure-caption title-color font-24">Rock</figcaption>
+      </figure>
+    </div>
+    <div id="paper" class="text-center" data-toggle="modal" data-target="#exampleModalCenter">
+      <figure class="btn-area">
+        <img src="/assets/Paper.svg" class="figure-img throw-img">
+        <figcaption class="figure-caption title-color font-24">Paper</figcaption>
+      </figure>
+    </div>
+    <div id="scissors" class="text-center" data-toggle="modal" data-target="#exampleModalCenter">
+      <figure class="btn-area">
+        <img src="/assets/Scissors.svg" class="figure-img throw-img">
+        <figcaption class="figure-caption title-color font-24">Scissors</figcaption>
+      </figure>
+    </div>
+  </div>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="waiting">
+            <div class="d-flex flex-row justify-content-center">
+              <span id="result" class="title-color font-21">WAITING CURB'S CHOOSE</span>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <div class="d-flex flex-column text-center mr-auto">
+                <figure>
+                  <img id="result-user-img" src="" class="figure-img throw-img">
+                  <figcaption class="figure-caption title-color font-24">Your bet</figcaption>
+                </figure>
+              </div>
+              <div class="d-flex flex-column text-center ml-auto">
+                <figure>
+                  <div id="comp-result">
+                    <img id="result-comp-img" src="" class="figure-img comp-img">
+                  </div>
+                  <div class="spinner d-none">
+                    <div class="spinner-grow text-secondary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-secondary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-secondary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </div>
+                </figure>
+                <div>
+                  <img src="/assets/curb_logo.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0">
+          <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

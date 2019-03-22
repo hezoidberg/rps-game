@@ -17,3 +17,8 @@ Run in the terminal:
 $ bundle install
 $ rails s
 ```
+
+## Run tests
+```bash
+$ rails test
+```
