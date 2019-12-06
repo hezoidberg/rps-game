@@ -7,7 +7,7 @@ ruby '2.6.2'
 
 gem 'faraday', '~> 0.15.4'
 gem 'mini_racer', platforms: :ruby
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
