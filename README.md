@@ -22,5 +22,3 @@ $ rails s
 ```bash
 $ rails test
 ```
-## Author
-unsecure@email.com
